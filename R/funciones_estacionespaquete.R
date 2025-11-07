@@ -1,12 +1,12 @@
-#' Descargar y leer datos de una estación meteorológica
+#' Descargar y leer datos de una estacion meteorologica
 #'
-#' Descarga el archivo CSV de una estación desde el repositorio del curso
+#' Descarga el archivo CSV de una estacion desde el repositorio del curso
 #' y lo lee como un data frame.
 #'
-#' @param id_estacion Código de la estación, por ejemplo "NH0437".
-#' @param ruta Ruta donde se guardará el archivo CSV descargado.
+#' @param id_estacion Codigo de la estacion, por ejemplo "NH0437".
+#' @param ruta Ruta donde se guardara el archivo CSV descargado.
 #'
-#' @return Un data frame con los datos de la estación seleccionada.
+#' @return Un data frame con los datos de la estacion seleccionada.
 #' @export
 leer_datos_estacion <- function(id_estacion, ruta) {
   url_base <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/"
@@ -15,9 +15,9 @@ leer_datos_estacion <- function(id_estacion, ruta) {
   datos <- read.csv(ruta, stringsAsFactors = FALSE)
   return(datos)
 }
-#' Tabla resumen de temperatura por estación
+#' Tabla resumen de temperatura por estacion
 #'
-#' Calcula la media y el desvío estándar de la temperatura de abrigo
+#' Calcula la media y el desvio estandar de la temperatura de abrigo
 #' a 150 cm para un conjunto de estaciones.
 #'
 #' @param datos data.frame con los datos (debe tener columnas `id`
@@ -37,13 +37,13 @@ tabla_resumen_temperatura <- function(datos, estaciones) {
     )
 }
 
-#' Gráfico de temperatura media mensual por estación
+#' Grafico de temperatura media mensual por estacion
 #'
-#' Calcula la temperatura media mensual por estación y devuelve
-#' un gráfico con las series de cada estación.
+#' Calcula la temperatura media mensual por estacion y devuelve
+#' un grafico con las series de cada estacion.
 #'
 #' @param datos data.frame con los datos.
-#' @param titulo título del gráfico.
+#' @param titulo titulo del grafico.
 #'
 #' @return objeto ggplot.
 #' @export
