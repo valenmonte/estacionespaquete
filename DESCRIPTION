@@ -2,7 +2,7 @@ Package: estacionespaquete
 Title: Paquete de estaciones meteorologicas
 Version: 0.0.0.9000
 Authors@R: 
-    person("Valentin", "Monteverde", , "monteverdevalentin@gmail.com", role = c("aut", "cre"))
+    person("Valentin", "Monteverde", "monteverdevalentin@gmail.com", role = c("aut", "cre"))
 Description: El paquete lee y analiza estaciones los datos de las estaciones meteorologicas .
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
