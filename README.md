@@ -32,4 +32,10 @@ Este paquete fue creado por Valentín Monteverde y Agustin Zarate,
 como ejercicio colaborativo para practicar el flujo de trabajo con Git y GitHub.
 
 ---
+## Ejemplos de uso
+library(estacionespaquete)
+dplyr::glimpse(datos_ejemplo)
+tabla_resumen_temperatura(datos_ejemplo, estaciones = c("NH0472", "NH0437"))
+grafico_temperatura_mensual(datos_ejemplo)
+
 
