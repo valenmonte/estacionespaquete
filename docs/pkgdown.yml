@@ -3,7 +3,4 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   introduccion-estacionespaquete: introduccion-estacionespaquete.html
-last_built: 2025-11-07T14:02Z
-urls:
-  reference: https://valenmonte.github.io/estacionespaquete/reference
-  article: https://valenmonte.github.io/estacionespaquete/articles
+last_built: 2025-11-07T15:22Z
