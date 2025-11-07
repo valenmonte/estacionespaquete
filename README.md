@@ -1,10 +1,13 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
 
-# Paquete de Prueba — Estaciones Meteorológicas <img src="man/figures/logo.png" align="right" width="120"/>
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# estacionespaquete
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+# Paquete de Prueba — Estaciones Meteorológicas <img src="man/figures/logo.png" data-align="right" width="120" />
 
 Este paquete fue desarrollado como parte del **Ejercicio Transversal** y
 Su objetivo es **aprender a crear, estructurar y conectar un paquete de
@@ -14,7 +17,7 @@ R con GitHub**, no generar una herramienta de uso real.
 
 ## 🚧 Estado del proyecto
 
-⚠️ **Este paquete es únicamente de prueba y práctica.**\
+⚠️ **Este paquete es únicamente de prueba y práctica.**  
 No está pensado para ser distribuido, instalado ni utilizado en
 proyectos reales.
 
@@ -32,7 +35,7 @@ funciones de `{usethis}` para crear y versionar un paquete en GitHub.
 
 ## 👩‍💻 Autores
 
-Este paquete fue creado por Valentín Monteverde y Agustin Zarate,\
+Este paquete fue creado por Valentín Monteverde y Agustin Zarate,  
 como ejercicio colaborativo para practicar el flujo de trabajo con Git y
 GitHub.
 
@@ -40,9 +43,18 @@ GitHub.
 
 ## Ejemplos de uso
 
-```{r}
-library(estacionespaquete) 
-dplyr::glimpse(datos_ejemplo) 
-tabla_resumen_temperatura(datos_ejemplo, estaciones = c("NH0472", "NH0437")) grafico_temperatura_mensual(datos_ejemplo)
+``` r
+library(estacionespaquete)
 
+# Ver estructura de los datos de ejemplo
+dplyr::glimpse(datos_ejemplo)
+
+# Tabla resumen de temperatura para un subconjunto de estaciones
+tabla_resumen_temperatura(
+  datos_ejemplo,
+  estaciones = c("NH0472", "NH0437")
+)
+
+# Gráfico de temperatura media mensual
+grafico_temperatura_mensual(datos_ejemplo)
 ```
