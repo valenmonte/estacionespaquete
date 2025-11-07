@@ -1,3 +1,9 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Paquete de Prueba — Estaciones Meteorológicas
 
 Este paquete fue desarrollado como parte del **Ejercicio Transversal** y
@@ -8,7 +14,7 @@ R con GitHub**, no generar una herramienta de uso real.
 
 ## 🚧 Estado del proyecto
 
-⚠️ **Este paquete es únicamente de prueba y práctica.**  
+⚠️ **Este paquete es únicamente de prueba y práctica.**\
 No está pensado para ser distribuido, instalado ni utilizado en
 proyectos reales.
 
@@ -27,8 +33,15 @@ un paquete en GitHub.
 
 ## 👩‍💻 Autores
 
-Este paquete fue creado por Valentín Monteverde y Agustin Zarate,  
+Este paquete fue creado por Valentín Monteverde y Agustin Zarate,\
 como ejercicio colaborativo para practicar el flujo de trabajo con Git y
 GitHub.
 
 ------------------------------------------------------------------------
+
+```{r}
+library(estacionespaquete)
+dplyr::glimpse(datos_ejemplo)
+tabla_resumen_temperatura(datos_ejemplo, estaciones = c("NH0472", "NH0437"))
+grafico_temperatura_mensual(datos_ejemplo)
+```
