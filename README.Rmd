@@ -32,20 +32,20 @@ No está pensado para ser distribuido, instalado ni utilizado en proyectos reale
 
 ------------------------------------------------------------------------
 
-## 📚 Contenido
+## 📚 Contenido:
 
 El paquete incluye ejemplos de: - Lectura de datos meteorológicos (`.csv`) de distintas estaciones. - Limpieza, combinación y resumen de datos. - Cálculo de temperatura media, máxima, mínima y desvío estándar. - Ejemplo de unión con metadatos (`left_join()`). - Uso de funciones de `{usethis}` para crear y versionar un paquete en GitHub.
 
 ------------------------------------------------------------------------
 
-## 👩‍💻 Autores
+## 👩‍💻 Autores:
 
 Este paquete fue creado por Valentín Monteverde y Agustin Zarate,\
 como ejercicio colaborativo para practicar el flujo de trabajo con Git y GitHub.
 
 ------------------------------------------------------------------------
 
-## Ejemplos de uso
+## Ejemplos de uso:
 
 ``` r
 library(estacionespaquete)
