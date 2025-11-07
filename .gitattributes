@@ -1,4 +1,4 @@
-# Ignorar archivos generados al calcular lenguajes
+# No contar archivos generados (sitio, reportes, etc.) como código del proyecto
 docs/* linguist-vendored
 *.html linguist-vendored
 *.css linguist-vendored
