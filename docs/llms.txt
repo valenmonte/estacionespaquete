@@ -1,3 +1,5 @@
+# estacionespaquete
+
 # Paquete de Prueba — Estaciones Meteorológicas
 
 Este paquete fue desarrollado como parte del **Ejercicio Transversal** y
@@ -35,11 +37,21 @@ GitHub.
 
 ## Ejemplos de uso
 
-\`\`\`{r} library(estacionespaquete) dplyr::glimpse(datos_ejemplo)
-tabla_resumen_temperatura(datos_ejemplo, estaciones = c(“NH0472”,
-“NH0437”)) grafico_temperatura_mensual(datos_ejemplo)
+``` r
+library(estacionespaquete)
 
-\`\`\`
+# Ver estructura de los datos de ejemplo
+dplyr::glimpse(datos_ejemplo)
+
+# Tabla resumen de temperatura para un subconjunto de estaciones
+tabla_resumen_temperatura(
+  datos_ejemplo,
+  estaciones = c("NH0472", "NH0437")
+)
+
+# Gráfico de temperatura media mensual
+grafico_temperatura_mensual(datos_ejemplo)
+```
 
 # Package index
 
