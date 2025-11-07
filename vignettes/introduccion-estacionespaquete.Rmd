@@ -1,0 +1,38 @@
+---
+title: "Introducción a estacionespaquete"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introducción a estacionespaquete}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(estacionespaquete)
+library(dplyr)
+```
+
+## Cargar los datos de ejemplo
+
+El paquete incluye un conjunto de datos llamado `datos_ejemplo` con mediciones de varias estaciones meteorológicas.
+
+```{r}
+datos_ejemplo <- estacionespaquete::datos_ejemplo
+dplyr::glimpse(datos_ejemplo)
+```
+
+```{r}
+dplyr::glimpse(datos_ejemplo)
+tabla_resumen_temperatura(
+datos = datos_ejemplo,
+estaciones = c("NH0472", "NH0437", "NH0046")
+)
+grafico_temperatura_mensual(
+datos = datos_ejemplo,
+titulo = "Temperatura media mensual"
+)
+```
