@@ -1,5 +1,6 @@
 
-# Paquete de Prueba — Estaciones Meteorológicas
+# Paquete de Prueba — Estaciones Meteorológicas <img src="man/figures/logo.png" align="right" width="120" />
+
 
 Este paquete fue desarrollado como parte del **Ejercicio Transversal** y 
 Su objetivo es **aprender a crear, estructurar y conectar un paquete de R con GitHub**,
