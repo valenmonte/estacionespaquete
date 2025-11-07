@@ -1,0 +1,52 @@
+# Paquete de Prueba — Estaciones Meteorológicas
+
+Este paquete fue desarrollado como parte del **Ejercicio Transversal** y
+Su objetivo es **aprender a crear, estructurar y conectar un paquete de
+R con GitHub**, no generar una herramienta de uso real.
+
+------------------------------------------------------------------------
+
+## 🚧 Estado del proyecto
+
+⚠️ **Este paquete es únicamente de prueba y práctica.**  
+No está pensado para ser distribuido, instalado ni utilizado en
+proyectos reales.
+
+------------------------------------------------------------------------
+
+## 📚 Contenido
+
+El paquete incluye ejemplos de: - Lectura de datos meteorológicos
+(`.csv`) de distintas estaciones. - Limpieza, combinación y resumen de
+datos. - Cálculo de temperatura media, máxima, mínima y desvío
+estándar. - Ejemplo de unión con metadatos (`left_join()`). - Uso de
+funciones de [usethis](https://usethis.r-lib.org) para crear y versionar
+un paquete en GitHub.
+
+------------------------------------------------------------------------
+
+## 👩‍💻 Autores
+
+Este paquete fue creado por Valentín Monteverde y Agustin Zarate,  
+como ejercicio colaborativo para practicar el flujo de trabajo con Git y
+GitHub.
+
+------------------------------------------------------------------------
+
+# Package index
+
+## All functions
+
+- [`grafico_temperatura_mensual()`](https://valenmonte.github.io/estacionespaquete/reference/grafico_temperatura_mensual.md)
+  : Gráfico de temperatura media mensual por estación
+- [`leer_datos_estacion()`](https://valenmonte.github.io/estacionespaquete/reference/leer_datos_estacion.md)
+  : Descargar y leer datos de una estación meteorológica
+- [`tabla_resumen_temperatura()`](https://valenmonte.github.io/estacionespaquete/reference/tabla_resumen_temperatura.md)
+  : Tabla resumen de temperatura por estación
+
+# Articles
+
+### All vignettes
+
+- [Introducción a
+  estacionespaquete](https://valenmonte.github.io/estacionespaquete/articles/introduccion-estacionespaquete.md):
