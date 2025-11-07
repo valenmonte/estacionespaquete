@@ -5,11 +5,11 @@
 
 <!-- badges: start -->
 
-[![Lifecycle: experimental](%5Bhttps://img.shields.io/badge/lifecycle-experimental-orange.svg)\](https://lifecycle.r-lib.org/articles/stages.html#experimental)](https://img.shields.io/badge/lifecycle-experimental-orange.svg)\](<https://lifecycle.r-lib.org/articles/stages.html#experimental>))
+[![Lifecycle:experimental](%5Bhttps://img.shields.io/badge/lifecycle-experimental-orange.svg)\](https://lifecycle.r-lib.org/articles/stages.html#experimental)](https://img.shields.io/badge/lifecycle-experimental-orange.svg)\](<https://lifecycle.r-lib.org/articles/stages.html#experimental>))
 
 [![R-CMD-check](%5Bhttps://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml/badge.svg)\](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml)](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml/badge.svg)\](<https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml>))
 
-[![Codecov test coverage](%5Bhttps://codecov.io/gh/valenmonte/estacionespaquete/branch/master/graph/badge.svg)\](https://app.codecov.io/gh/valenmonte/estacionespaquete?branch=master)](https://codecov.io/gh/valenmonte/estacionespaquete/branch/master/graph/badge.svg)\](<https://app.codecov.io/gh/valenmonte/estacionespaquete?branch=master>))
+[![Codecov testcoverage](%5Bhttps://codecov.io/gh/valenmonte/estacionespaquete/branch/master/graph/badge.svg)\](https://app.codecov.io/gh/valenmonte/estacionespaquete?branch=master)](https://codecov.io/gh/valenmonte/estacionespaquete/branch/master/graph/badge.svg)\](<https://app.codecov.io/gh/valenmonte/estacionespaquete?branch=master>))
 
 <!-- badges: end -->
 
