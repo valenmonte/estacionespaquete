@@ -2,19 +2,19 @@
 % Please edit documentation in R/funciones_estacionespaquete.R
 \name{grafico_temperatura_mensual}
 \alias{grafico_temperatura_mensual}
-\title{Gráfico de temperatura media mensual por estación}
+\title{Grafico de temperatura media mensual por estacion}
 \usage{
 grafico_temperatura_mensual(datos, titulo = "Temperatura")
 }
 \arguments{
 \item{datos}{data.frame con los datos.}
 
-\item{titulo}{título del gráfico.}
+\item{titulo}{titulo del grafico.}
 }
 \value{
 objeto ggplot.
 }
 \description{
-Calcula la temperatura media mensual por estación y devuelve
-un gráfico con las series de cada estación.
+Calcula la temperatura media mensual por estacion y devuelve
+un grafico con las series de cada estacion.
 }
