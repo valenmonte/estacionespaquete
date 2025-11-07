@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 # Paquete de Prueba — Estaciones Meteorológicas <img src="man/figures/logo.png" data-align="right" width="120" />
