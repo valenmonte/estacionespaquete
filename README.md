@@ -32,7 +32,3 @@ como ejercicio colaborativo para practicar el flujo de trabajo con Git y GitHub.
 
 ---
 
-## 🧩 Licencia
-
-Este material se comparte con fines académicos bajo la licencia MIT.
-
