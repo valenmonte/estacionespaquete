@@ -6,5 +6,4 @@
 ^CODE_OF_CONDUCT\.md$
 ^LICENSE\.md$
 ^_pkgdown\.yml$
-^docs$
 ^pkgdown$
