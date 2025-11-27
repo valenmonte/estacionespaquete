@@ -2,19 +2,19 @@
 % Please edit documentation in R/funciones_estacionespaquete.R
 \name{leer_datos_estacion}
 \alias{leer_datos_estacion}
-\title{Descargar y leer datos de una estación meteorológica}
+\title{Descargar y leer datos de una estacion meteorologica}
 \usage{
 leer_datos_estacion(id_estacion, ruta)
 }
 \arguments{
-\item{id_estacion}{Código de la estación, por ejemplo "NH0437".}
+\item{id_estacion}{Codigo de la estacion, por ejemplo "NH0437".}
 
-\item{ruta}{Ruta donde se guardará el archivo CSV descargado.}
+\item{ruta}{Ruta donde se guardara el archivo CSV descargado.}
 }
 \value{
-Un data frame con los datos de la estación seleccionada.
+Un data frame con los datos de la estacion seleccionada.
 }
 \description{
-Descarga el archivo CSV de una estación desde el repositorio del curso
+Descarga el archivo CSV de una estacion desde el repositorio del curso
 y lo lee como un data frame.
 }

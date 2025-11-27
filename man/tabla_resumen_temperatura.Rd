@@ -2,7 +2,7 @@
 % Please edit documentation in R/funciones_estacionespaquete.R
 \name{tabla_resumen_temperatura}
 \alias{tabla_resumen_temperatura}
-\title{Tabla resumen de temperatura por estación}
+\title{Tabla resumen de temperatura por estacion}
 \usage{
 tabla_resumen_temperatura(datos, estaciones)
 }
@@ -16,6 +16,6 @@ y \code{temperatura_abrigo_150cm}).}
 data.frame con columnas: id, promedio, desviacion.
 }
 \description{
-Calcula la media y el desvío estándar de la temperatura de abrigo
+Calcula la media y el desvio estandar de la temperatura de abrigo
 a 150 cm para un conjunto de estaciones.
 }
