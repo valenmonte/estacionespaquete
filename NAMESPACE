@@ -3,3 +3,7 @@
 export(grafico_temperatura_mensual)
 export(leer_datos_estacion)
 export(tabla_resumen_temperatura)
+importFrom(dplyr,"%>%")
+importFrom(dplyr,group_by)
+importFrom(dplyr,mutate)
+importFrom(dplyr,summarise)

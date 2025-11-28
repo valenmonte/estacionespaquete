@@ -1,6 +1,0 @@
-pandoc: '3.4'
-pkgdown: 2.2.0
-pkgdown_sha: ~
-articles:
-  introduccion-estacionespaquete: introduccion-estacionespaquete.html
-last_built: 2025-11-07T17:04Z
