@@ -3,23 +3,28 @@
 \docType{data}
 \name{datos_ejemplo}
 \alias{datos_ejemplo}
-\title{Datos de ejemplo de estaciones meteorologicas}
+\title{Datos meteorológicos de ejemplo}
 \format{
-Un data frame con varias filas y columnas, por ejemplo:
+Un data frame con varias filas y las siguientes columnas:
 \describe{
-\item{id}{Codigo de la estacion.}
-\item{fecha}{Fecha de la medicion.}
-\item{temperatura_abrigo_150cm}{Temperatura medida a 1.5 m.}
-\item{temperatura_media}{Temperatura media diaria.}
+\item{id}{código de la estación (cadena de texto).}
+\item{fecha}{fecha de la medición (clase Date).}
+\item{temperatura_abrigo_150cm}{temperatura del aire en abrigo,
+a 1,50 m de altura, en grados Celsius.}
 }
 }
 \source{
-Datos armados para el trabajo practico.
+Datos adaptados para el Ejercicio Transversal de la materia.
 }
 \usage{
-datos_ejemplo
+data("datos_ejemplo")
 }
 \description{
-Conjunto de datos usado en los ejemplos del paquete.
+Conjunto de datos con mediciones de temperatura del aire
+en abrigo a 1,50 m para distintas estaciones meteorológicas.
+Estos datos se usan en los ejemplos del paquete.
+}
+\details{
+Cada fila corresponde a una observación (un día en una estación).
 }
 \keyword{datasets}
