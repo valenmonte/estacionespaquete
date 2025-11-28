@@ -100,8 +100,6 @@ grafico_temperatura_mensual(
 datos = datos_ejemplo,
 titulo = "Temperatura media mensual"
 )
-#> Warning: Removed 1 row containing missing values or values outside the scale range
-#> (`geom_line()`).
 ```
 
 ![](introduccion-estacionespaquete_files/figure-html/unnamed-chunk-2-1.png)

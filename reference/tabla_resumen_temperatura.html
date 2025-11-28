@@ -33,7 +33,7 @@ a 150 cm para un conjunto de estaciones."><meta property="og:image" content="/lo
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Tabla resumen de temperatura por estacion</h1>
-      <small class="dont-index">Source: <a href="https://github.com/valenmonte/estacionespaquete/blob/master/R/funciones_estacionespaquete.R" class="external-link"><code>R/funciones_estacionespaquete.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/valenmonte/estacionespaquete/blob/master/R/tabla_resumen_temperatura.R" class="external-link"><code>R/tabla_resumen_temperatura.R</code></a></small>
       <div class="d-none name"><code>tabla_resumen_temperatura.Rd</code></div>
     </div>
 
@@ -65,6 +65,14 @@ y <code>temperatura_abrigo_150cm</code>).</p></dd>
     <p>data.frame con columnas: id, promedio, desviacion.</p>
     </div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tabla_resumen_temperatura</span><span class="op">(</span><span class="va">datos_ejemplo</span><span class="op">)</span></span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in dplyr::filter(., id %in% estaciones):</span> <span style="color: #00BBBB;">ℹ</span> In argument: `id %in% estaciones`.</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Caused by error:</span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span style="color: #BBBB00;">!</span> argument "estaciones" is missing, with no default</span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>
 

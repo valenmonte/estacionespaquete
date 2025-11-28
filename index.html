@@ -70,61 +70,110 @@
 <h2 id="id_-instalación">📦 Instalación<a class="anchor" aria-label="anchor" href="#id_-instalaci%C3%B3n"></a>
 </h2>
 <p>Este paquete se instala directamente desde GitHub:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># Instalar 'remotes' si no lo tenés</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co"># Instalar el paquete</span></span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"valenmonte/estacionespaquete"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co"># Paquete de Prueba — Estaciones Meteorológicas ![](man/figures/logo.png){align="right" width="120"}</span></span>
-<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>Este paquete fue desarrollado como parte del <span class="sc">**</span>Ejercicio Transversal<span class="sc">**</span> y Su objetivo es <span class="sc">**</span>aprender a crear, estructurar y conectar un paquete de R con GitHub<span class="sc">**</span>, no generar una herramienta de uso real.</span>
-<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="sc">------------------------------------------------------------------------</span></span>
-<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="do">## 🚧 Estado del proyecto</span></span>
-<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>⚠️ <span class="sc">**</span>Este paquete es únicamente de prueba y práctica.<span class="sc">**</span>\</span>
-<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a>No está pensado para ser distribuido, instalado ni utilizado en proyectos reales.</span>
-<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a><span class="sc">------------------------------------------------------------------------</span></span>
-<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a><span class="do">## 📚 Contenido:</span></span>
-<span id="cb1-22"><a href="#cb1-22" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" tabindex="-1"></a>El paquete incluye ejemplos de<span class="sc">:</span> <span class="sc">-</span> Lectura de datos meteorológicos (<span class="st">`</span><span class="at">.csv</span><span class="st">`</span>) de distintas estaciones. <span class="sc">-</span> Limpieza, combinación y resumen de datos. <span class="sc">-</span> Cálculo de temperatura media, máxima, mínima y desvío estándar. <span class="sc">-</span> Ejemplo de unión con <span class="fu">metadatos</span> (<span class="st">`</span><span class="at">left_join()</span><span class="st">`</span>). <span class="sc">-</span> Uso de funciones de <span class="st">`</span><span class="at">{usethis}</span><span class="st">`</span> para crear y versionar un paquete en GitHub.</span>
-<span id="cb1-24"><a href="#cb1-24" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" tabindex="-1"></a><span class="sc">------------------------------------------------------------------------</span></span>
-<span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a><span class="do">## 👩‍💻 Autores:</span></span>
-<span id="cb1-28"><a href="#cb1-28" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a>Este paquete fue creado por Valentín Monteverde y Agustin Zarate,\</span>
-<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a>como ejercicio colaborativo para practicar el flujo de trabajo con Git y GitHub.</span>
-<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a><span class="sc">------------------------------------------------------------------------</span></span>
-<span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a><span class="do">## Ejemplos de uso:</span></span>
-<span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a><span class="st">```</span><span class="at"> r</span></span>
-<span id="cb1-37"><a href="#cb1-37" tabindex="-1"></a><span class="at">library(estacionespaquete)</span></span>
-<span id="cb1-38"><a href="#cb1-38" tabindex="-1"></a><span class="st">```</span></span>
-<span id="cb1-39"><a href="#cb1-39" tabindex="-1"></a><span class="st">```</span><span class="at">r</span></span>
-<span id="cb1-40"><a href="#cb1-40" tabindex="-1"></a><span class="at"># Ver estructura de los datos de ejemplo</span></span>
-<span id="cb1-41"><a href="#cb1-41" tabindex="-1"></a><span class="at">dplyr::glimpse(datos_ejemplo)</span></span>
-<span id="cb1-42"><a href="#cb1-42" tabindex="-1"></a><span class="st">```</span></span>
-<span id="cb1-43"><a href="#cb1-43" tabindex="-1"></a><span class="st">```</span><span class="at">r</span></span>
-<span id="cb1-44"><a href="#cb1-44" tabindex="-1"></a><span class="at"># Tabla resumen de temperatura para un subconjunto de estaciones</span></span>
-<span id="cb1-45"><a href="#cb1-45" tabindex="-1"></a><span class="at">tabla_resumen_temperatura(</span></span>
-<span id="cb1-46"><a href="#cb1-46" tabindex="-1"></a><span class="at">  datos_ejemplo,</span></span>
-<span id="cb1-47"><a href="#cb1-47" tabindex="-1"></a><span class="at">  estaciones = c("NH0472", "NH0437")</span></span>
-<span id="cb1-48"><a href="#cb1-48" tabindex="-1"></a><span class="at">)</span></span>
-<span id="cb1-49"><a href="#cb1-49" tabindex="-1"></a><span class="st">```</span></span>
-<span id="cb1-50"><a href="#cb1-50" tabindex="-1"></a><span class="st">```</span><span class="at">r</span></span>
-<span id="cb1-51"><a href="#cb1-51" tabindex="-1"></a><span class="at"># Gráfico de temperatura media mensual</span></span>
-<span id="cb1-52"><a href="#cb1-52" tabindex="-1"></a><span class="at">grafico_temperatura_mensual(datos_ejemplo)</span></span>
-<span id="cb1-53"><a href="#cb1-53" tabindex="-1"></a><span class="st">```</span></span></code></pre></div>
+<p>``` r # Instalar ‘remotes’ si no lo tenés install.packages(“remotes”)</p>
 </div>
 </div>
+<div class="section level1">
+<h1 id="instalar-el-paquete">Instalar el paquete<a class="anchor" aria-label="anchor" href="#instalar-el-paquete"></a>
+</h1>
+<p>remotes::install_github(“valenmonte/estacionespaquete”)</p>
+</div>
+<div class="section level1">
+<h1 id="paquete-de-prueba--estaciones-meteorológicas-">Paquete de Prueba — Estaciones Meteorológicas <a class="anchor" aria-label="anchor" href="#paquete-de-prueba--estaciones-meteorol%C3%B3gicas-"></a>
+</h1>
+<p>Este paquete fue desarrollado como parte del <strong>Ejercicio Transversal</strong> y Su objetivo es <strong>aprender a crear, estructurar y conectar un paquete de R con GitHub</strong>, no generar una herramienta de uso real.</p>
+<hr>
+<div class="section level2">
+<h2 id="id_-estado-del-proyecto">🚧 Estado del proyecto<a class="anchor" aria-label="anchor" href="#id_-estado-del-proyecto"></a>
+</h2>
+<p>⚠️ <strong>Este paquete es únicamente de prueba y práctica.</strong><br>
+No está pensado para ser distribuido, instalado ni utilizado en proyectos reales.</p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="id_-contenido">📚 Contenido:<a class="anchor" aria-label="anchor" href="#id_-contenido"></a>
+</h2>
+<p>El paquete incluye ejemplos de: - Lectura de datos meteorológicos (<code>.csv</code>) de distintas estaciones. - Limpieza, combinación y resumen de datos. - Cálculo de temperatura media, máxima, mínima y desvío estándar. - Ejemplo de unión con metadatos (<code><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join()</a></code>). - Uso de funciones de <a href="https://usethis.r-lib.org" class="external-link">usethis</a> para crear y versionar un paquete en GitHub.</p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="id_-autores">👩‍💻 Autores:<a class="anchor" aria-label="anchor" href="#id_-autores"></a>
+</h2>
+<p>Este paquete fue creado por Valentín Monteverde y Agustin Zarate,<br>
+como ejercicio colaborativo para practicar el flujo de trabajo con Git y GitHub.</p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="id_-ejemplos-de-uso">📘 Ejemplos de uso<a class="anchor" aria-label="anchor" href="#id_-ejemplos-de-uso"></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span> </span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Adjuntando el paquete: 'dplyr'</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:stats':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     filter, lag</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/valenmonte/estacionespaquete" class="external-link">estacionespaquete</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"datos_ejemplo"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span><span class="va">datos_ejemplo</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Rows: 95,681</span></span>
+<span><span class="co">#&gt; Columns: 35</span></span>
+<span><span class="co">#&gt; $ id                                  &lt;chr&gt; "NH0472", "NH0472", "NH0472", "NH0…</span></span>
+<span><span class="co">#&gt; $ fecha                               &lt;chr&gt; "1961-07-01", "1961-07-02", "1961-…</span></span>
+<span><span class="co">#&gt; $ temperatura_abrigo_150cm            &lt;dbl&gt; 11.10, 5.50, 6.00, NA, 12.40, 11.0…</span></span>
+<span><span class="co">#&gt; $ temperatura_abrigo_150cm_maxima     &lt;dbl&gt; 13.4, 10.5, 10.8, NA, 14.8, 16.5, …</span></span>
+<span><span class="co">#&gt; $ temperatura_abrigo_150cm_minima     &lt;dbl&gt; 8.8, 0.5, 1.2, 7.0, 10.0, 5.5, 4.0…</span></span>
+<span><span class="co">#&gt; $ temperatura_intemperie_5cm_minima   &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ temperatura_intemperie_50cm_minima  &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ temperatura_suelo_5cm_media         &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ temperatura_suelo_10cm_media        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ temperatura_inte_5cm                &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ temperatura_intemperie_150cm_minima &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ humedad_suelo                       &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ precipitacion_pluviometrica         &lt;dbl&gt; 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,…</span></span>
+<span><span class="co">#&gt; $ granizo                             &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…</span></span>
+<span><span class="co">#&gt; $ nieve                               &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…</span></span>
+<span><span class="co">#&gt; $ heliofania_efectiva                 &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ heliofania_relativa                 &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ tesion_vapor_media                  &lt;dbl&gt; 9.8, 7.9, 7.5, 14.9, 17.2, 11.5, 8…</span></span>
+<span><span class="co">#&gt; $ humedad_media                       &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ humedad_media_8_14_20               &lt;int&gt; 81, 80, 62, 93, 92, 80, 85, 70, 71…</span></span>
+<span><span class="co">#&gt; $ rocio_medio                         &lt;dbl&gt; 6.7, 3.6, 2.9, 12.9, 15.1, 9.0, 3.…</span></span>
+<span><span class="co">#&gt; $ duracion_follaje_mojado             &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ velocidad_viento_200cm_media        &lt;dbl&gt; 14.4, 4.8, 7.2, 8.8, 4.8, 14.4, 8.…</span></span>
+<span><span class="co">#&gt; $ direccion_viento_200cm              &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ velocidad_viento_1000cm_media       &lt;dbl&gt; 18, 6, 9, 11, 6, 18, 11, 15, 9, 11…</span></span>
+<span><span class="co">#&gt; $ direccion_viento_1000cm             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ velocidad_viento_maxima             &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ presion_media                       &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ radiacion_global                    &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ radiacion_neta                      &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ evaporacion_tanque                  &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ evapotranspiracion_potencial        &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ profundidad_napa                    &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span>
+<span><span class="co">#&gt; $ horas_frio                          &lt;dbl&gt; 0.0000000, 15.6000000, 14.5000000,…</span></span>
+<span><span class="co">#&gt; $ unidad_frio                         &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA…</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">estaciones_demo</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">datos_ejemplo</span><span class="op">$</span><span class="va">id</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span></span>
+<span><span class="fu"><a href="reference/tabla_resumen_temperatura.html">tabla_resumen_temperatura</a></span><span class="op">(</span></span>
+<span>  <span class="va">datos_ejemplo</span>,</span>
+<span>  estaciones <span class="op">=</span> <span class="va">estaciones_demo</span></span>
+<span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 2 × 3</span></span>
+<span><span class="co">#&gt;   id     media desvio</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;  &lt;dbl&gt;  &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt; 1 NH0472  18.0   5.94</span></span>
+<span><span class="co">#&gt; 2 NH0910  17.7   6.12</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/grafico_temperatura_mensual.html">grafico_temperatura_mensual</a></span><span class="op">(</span><span class="va">datos_ejemplo</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-5-1.png" width="100%"></p>
+</div>
+</div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">

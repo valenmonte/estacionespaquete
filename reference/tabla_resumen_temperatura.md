@@ -23,3 +23,12 @@ tabla_resumen_temperatura(datos, estaciones)
 ## Value
 
 data.frame con columnas: id, promedio, desviacion.
+
+## Examples
+
+``` r
+tabla_resumen_temperatura(datos_ejemplo)
+#> Error in dplyr::filter(., id %in% estaciones): ℹ In argument: `id %in% estaciones`.
+#> Caused by error:
+#> ! argument "estaciones" is missing, with no default
+```

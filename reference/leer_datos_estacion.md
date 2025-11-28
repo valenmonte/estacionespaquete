@@ -22,3 +22,5 @@ leer_datos_estacion(id_estacion, ruta)
 ## Value
 
 Un data frame con los datos de la estacion seleccionada.
+
+@examples leer_datos_estacion("NHO472", "datos/estacion.csv")
