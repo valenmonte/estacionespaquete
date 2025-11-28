@@ -62,7 +62,9 @@ como ejercicio colaborativo para practicar el flujo de trabajo con Git y GitHub.
 ## 📘 Ejemplos de uso
 
 ```{r}
+library(dplyr) 
 library(estacionespaquete)
+data("datos_ejemplo")
 ```
 
 ```{r}
@@ -70,9 +72,10 @@ dplyr::glimpse(datos_ejemplo)
 ```
 
 ```{r}
+estaciones_demo <- unique(datos_ejemplo$id)[1:2]
 tabla_resumen_temperatura(
   datos_ejemplo,
-  estaciones = c("NHO472", "NHO437")
+  estaciones = estaciones_demo
 )
 ```
 
