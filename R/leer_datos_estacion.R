@@ -16,6 +16,6 @@ leer_datos_estacion <- function(id_estacion, ruta) {
   url_base <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/"
   url <- paste0(url_base, id_estacion, ".csv")
   utils::download.file(url, destfile = ruta)
-  datos <- utils::read.csv(ruta, stringsAsFactors)
+  datos <- utils::read.csv(ruta)
   return(datos)
 }
