@@ -2,7 +2,7 @@
 % Please edit documentation in R/grafico_temperatura_mensual.R
 \name{grafico_temperatura_mensual}
 \alias{grafico_temperatura_mensual}
-\title{Gráfico de temperatura media de todas las estaciones por mes}
+\title{Grafico de temperatura media de todas las estaciones por mes}
 \usage{
 grafico_temperatura_mensual(datos, titulo = "Temperatura media mensual")
 }
