@@ -2,7 +2,24 @@
 % Please edit documentation in R/tabla_resumen_temperatura.R
 \name{tabla_resumen_temperatura}
 \alias{tabla_resumen_temperatura}
-\title{Tabla resumen de temperatura por estacion}
+\alias{Calcula}
+\alias{la}
+\alias{media}
+\alias{y}
+\alias{el}
+\alias{desvío}
+\alias{estándar}
+\alias{de}
+\alias{temperatura}
+\alias{abrigo}
+\alias{a}
+\alias{150}
+\alias{cm}
+\alias{para}
+\alias{un}
+\alias{conjunto}
+\alias{estaciones.}
+\title{Tabla resumen de temperatura por estación}
 \usage{
 tabla_resumen_temperatura(datos, estaciones)
 }
@@ -16,9 +33,13 @@ y \code{temperatura_abrigo_150cm}).}
 data.frame con columnas: id, promedio, desviacion.
 }
 \description{
-Calcula la media y el desvio estandar de la temperatura de abrigo
-a 150 cm para un conjunto de estaciones.
+Tabla resumen de temperatura por estación
 }
 \examples{
-tabla_resumen_temperatura(datos_ejemplo)
+data("datos_ejemplo")
+tabla_resumen_temperatura(
+  datos_ejemplo,
+  estaciones = c("NHO472", "NHO437")
+)
+
 }
