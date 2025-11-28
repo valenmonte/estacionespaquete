@@ -1,14 +1,14 @@
-#' Grafico de temperatura media de todas las estaciones por mes
-#'
-#' Calcula la temperatura media mensual (promedio de todas las estaciones)
-#' y devuelve un grafico con 1 valor por mes (enero, febrero, etc.).
-#'
+# Grafico de temperatura media de todas las estaciones por mes
+#
+# Calcula la temperatura media mensual (promedio de todas las estaciones)
+# y devuelve un grafico con 1 valor por mes (enero, febrero, etc.).
+#
 #' @param datos data.frame con los datos
 #' @param titulo titulo del grafico
 #' @importFrom dplyr %>% mutate group_by summarise
 #' @return objeto ggplot
 #' @examples
-#' grafico_temperatura_mensual(datos_ejemplo)
+#  grafico_temperatura_mensual(datos_ejemplo)
 #' @export
 grafico_temperatura_mensual <- function(datos, titulo = "Temperatura media mensual") {
 
@@ -27,7 +27,7 @@ grafico_temperatura_mensual <- function(datos, titulo = "Temperatura media mensu
     ggplot2::geom_point() +
     ggplot2::labs(
       x = "Mes",
-      y = "Temperatura media (°C)",
+      y = "Temperatura media (C)",
       title = titulo
     ) +
     ggplot2::theme_minimal()
