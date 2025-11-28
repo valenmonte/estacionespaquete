@@ -6,6 +6,13 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+# Introducción al paquete `estacionespaquete`
+
+El objetivo de este paquete es trabajar con datos meteorológicos de estaciones:
+leer los datos, obtener resúmenes y hacer gráficos simples de temperatura.
+
+En esta viñeta vamos a mostrar, paso a paso, cómo usar las funciones
+principales del paquete con el conjunto de datos `datos_ejemplo`.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -14,6 +21,15 @@ knitr::opts_chunk$set(
 )
 library(estacionespaquete)
 library(dplyr)
+```
+## 1. Cargar el paquete y los datos de ejemplo
+
+Primero cargamos el paquete y el conjunto de datos que viene incluido.
+Este dataset tiene temperaturas medidas en varias estaciones meteorológicas.
+
+```{r}
+data("datos_ejemplo")
+dplyr::glimpse(datos_ejemplo)
 ```
 
 ## Cargar los datos de ejemplo
@@ -36,3 +52,68 @@ datos = datos_ejemplo,
 titulo = "Temperatura media mensual"
 )
 ```
+
+---
+
+### 🔹 Sección 2 — Leer datos de una estación (si usan `leer_datos_estacion()`)
+
+```markdown
+## 2. Leer los datos de una estación
+
+La función `leer_datos_estacion()` sirve para descargar y leer los datos
+de una estación desde el repositorio del curso (en formato CSV).
+
+```{r}
+# Ejemplo: descargar datos de una estación a un archivo CSV
+# (este ejemplo se puede comentar si no quieren que baje archivos en el knit)
+# leer_datos_estacion("NHO472", "datos/estacion_NHO472.csv")
+```
+### 🔹 Sección 3 — Tabla resumen de temperatura
+
+
+## 3. Obtener una tabla resumen de temperatura
+
+La función `tabla_resumen_temperatura()` calcula, para cada estación,
+la temperatura media y el desvío estándar de la temperatura en abrigo.
+
+```{r}
+# Elegimos dos estaciones de ejemplo
+estaciones_demo <- unique(datos_ejemplo$id)[1:2]
+
+tabla_resumen_temperatura(
+  datos_ejemplo,
+  estaciones = estaciones_demo
+)
+
+```
+
+### 🔹 Sección 4 — Gráfico de temperatura media mensual
+
+```markdown
+## 4. Gráfico de temperatura media mensual
+
+La función `grafico_temperatura_mensual()` calcula la temperatura media
+de todas las estaciones para cada mes del año y devuelve un gráfico
+con un valor por mes.
+
+```{r}
+grafico_temperatura_mensual(datos_ejemplo)
+```
+
+
+### 🔹 Sección 5 — Conclusión breve
+
+
+## 5. Resumen
+
+En esta viñeta vimos:
+
+- Cómo cargar el paquete y los datos de ejemplo.
+- Cómo obtener una tabla resumen por estación con `tabla_resumen_temperatura()`.
+- Cómo hacer un gráfico de temperatura media mensual con
+  `grafico_temperatura_mensual()`.
+
+La idea es que el usuario pueda reemplazar `datos_ejemplo` por sus
+propios datos meteorológicos y reutilizar las mismas funciones
+para explorar y visualizar sus series de temperatura.
+
