@@ -17,12 +17,21 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml)
-[![Codecov test coverage](https://codecov.io/gh/valenmonte/estacionespaquete/branch/master/graph/badge.svg)](https://app.codecov.io/gh/valenmonte/estacionespaquete?branch=master)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![R-CMD-check](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/valenmonte/estacionespaquete/actions/workflows/R-CMD-check.yaml) [![Codecov test coverage](https://codecov.io/gh/valenmonte/estacionespaquete/branch/master/graph/badge.svg)](https://app.codecov.io/gh/valenmonte/estacionespaquete?branch=master)
 
 <!-- badges: end -->
 
+------------------------------------------------------------------------
+
+## 📦 Instalación
+
+Este paquete se instala directamente desde GitHub:
+
+\`\`\` r \# Instalar 'remotes' si no lo tenés install.packages("remotes")
+
+# Instalar el paquete
+
+remotes::install_github("valenmonte/estacionespaquete")
 
 # Paquete de Prueba — Estaciones Meteorológicas ![](man/figures/logo.png){align="right" width="120"}
 
@@ -50,20 +59,23 @@ como ejercicio colaborativo para practicar el flujo de trabajo con Git y GitHub.
 
 ------------------------------------------------------------------------
 
-## Ejemplos de uso:
+## 📘 Ejemplos de uso
 
-``` r
+```{r}
 library(estacionespaquete)
+```
 
-# Ver estructura de los datos de ejemplo
+```{r}
 dplyr::glimpse(datos_ejemplo)
+```
 
-# Tabla resumen de temperatura para un subconjunto de estaciones
+```{r}
 tabla_resumen_temperatura(
   datos_ejemplo,
-  estaciones = c("NH0472", "NH0437")
+  estaciones = c("NHO472", "NHO437")
 )
+```
 
-# Gráfico de temperatura media mensual
+```{r}
 grafico_temperatura_mensual(datos_ejemplo)
 ```
