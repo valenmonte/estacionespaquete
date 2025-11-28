@@ -1,4 +1,4 @@
-#' Gráfico de temperatura media de todas las estaciones por mes
+#' Grafico de temperatura media de todas las estaciones por mes
 #'
 #' Calcula la temperatura media mensual (promedio de todas las estaciones)
 #' y devuelve un gráfico con 1 valor por mes (enero, febrero, etc.).
