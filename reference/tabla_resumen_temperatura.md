@@ -1,7 +1,6 @@
-# Tabla resumen de temperatura por estacion
+# Tabla resumen de temperatura por estación
 
-Calcula la media y el desvio estandar de la temperatura de abrigo a 150
-cm para un conjunto de estaciones.
+Tabla resumen de temperatura por estación
 
 ## Usage
 
@@ -27,8 +26,11 @@ data.frame con columnas: id, promedio, desviacion.
 ## Examples
 
 ``` r
-tabla_resumen_temperatura(datos_ejemplo)
-#> Error in dplyr::filter(., id %in% estaciones): ℹ In argument: `id %in% estaciones`.
-#> Caused by error:
-#> ! argument "estaciones" is missing, with no default
+data("datos_ejemplo")
+tabla_resumen_temperatura(
+  datos_ejemplo,
+  estaciones = c("NHO472", "NHO437")
+)
+#> # A tibble: 0 × 3
+#> # ℹ 3 variables: id <chr>, promedio <dbl>, desviacion <dbl>
 ```
