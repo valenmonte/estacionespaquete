@@ -1,33 +1,35 @@
-# Datos de ejemplo de estaciones meteorologicas
+# Datos meteorológicos de ejemplo
 
-Conjunto de datos usado en los ejemplos del paquete.
+Conjunto de datos con mediciones de temperatura del aire en abrigo a
+1,50 m para distintas estaciones meteorológicas. Estos datos se usan en
+los ejemplos del paquete.
 
 ## Usage
 
 ``` r
-datos_ejemplo
+data("datos_ejemplo")
 ```
 
 ## Format
 
-Un data frame con varias filas y columnas, por ejemplo:
+Un data frame con varias filas y las siguientes columnas:
 
 - id:
 
-  Codigo de la estacion.
+  código de la estación (cadena de texto).
 
 - fecha:
 
-  Fecha de la medicion.
+  fecha de la medición (clase Date).
 
 - temperatura_abrigo_150cm:
 
-  Temperatura medida a 1.5 m.
-
-- temperatura_media:
-
-  Temperatura media diaria.
+  temperatura del aire en abrigo, a 1,50 m de altura, en grados Celsius.
 
 ## Source
 
-Datos armados para el trabajo practico.
+Datos adaptados para el Ejercicio Transversal de la materia.
+
+## Details
+
+Cada fila corresponde a una observación (un día en una estación).
